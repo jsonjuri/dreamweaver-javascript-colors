@@ -1,0 +1,165 @@
+#editor-holder{
+    // cm-variables starting with $ different color [added cm-variable-1, cm-variable-2]
+    .cm-tag, .cm-builtin, .cm-qualifier,.cm-variable,.cm-variable-1,.cm-variable-2, .cm-string, .cm-property {
+        // [BEGIN] cm-variables starting with $ different color
+		@valueProperties: #e36d6d;		
+		@functionProperties: #b5dca2;		
+		@constructorProperties: #b5dca2;
+		@objectConstructor: #b5dca2;
+		@otherProperties: #b5dca2;
+		@arrayProperties: #ffd766;	
+        @stringProperties: #c774d9;
+			
+		&.cm-dreamweaver-javascript-value-properties {	
+			&-NaN{color: @valueProperties}
+			&-Infinity{color: @valueProperties}
+			&-undefined{color: @valueProperties}
+		}
+		
+		&.cm-dreamweaver-javascript-function-properties {
+			&-eval{color: @valueProperties}
+			&-parseInt{color: @valueProperties}
+			&-parseFloat{color: @valueProperties}
+			&-isNaN{color: @valueProperties}
+			&-isFinite{color: @valueProperties}
+			&-decodeURI{color: @valueProperties}
+			&-decodeURIComponent{color: @valueProperties}
+			&-encodeURI{color: @valueProperties}
+			&-encodeURIComponent{color: @valueProperties}
+			&-escape{color: @valueProperties}
+			&-unescape{color: @valueProperties}
+		}
+
+		&.cm-dreamweaver-javascript-constructor-properties {
+			&-Object{color: @constructorProperties}
+			&-Function{color: @constructorProperties}
+			&-Array{color: @constructorProperties}
+			&-ArrayBuffer{color: @constructorProperties}
+			&-String{color: @constructorProperties}
+			&-Boolean{color: @constructorProperties}
+			&-Number{color: @constructorProperties}
+			&-DataView{color: @constructorProperties}
+			&-Date{color: @constructorProperties}
+			&-Promise{color: @constructorProperties}
+			&-RegExp{color: @constructorProperties}
+			&-Map{color: @constructorProperties}
+			&-WeakMap{color: @constructorProperties}
+			&-Set{color: @constructorProperties}
+			&-WeakSet{color: @constructorProperties}
+			&-SharedArrayBuffer{color: @constructorProperties}
+			&-Symbol{color: @constructorProperties}
+			&-Error{color: @constructorProperties}
+			&-EvalError{color: @constructorProperties}
+			&-RangeError{color: @constructorProperties}
+			&-ReferenceError{color: @constructorProperties}
+			&-SyntaxError{color: @constructorProperties}
+			&-TypeError{color: @constructorProperties}
+			&-URIError{color: @constructorProperties}
+		}
+
+		&.cm-dreamweaver-javascript-other-properties {
+			&-Atomics{color: @otherProperties}
+			&-Math{color: @otherProperties}
+			&-JSON{color: @otherProperties}
+			&-Reflect{color: @otherProperties}
+			&-Proxy{color: @otherProperties}
+		}
+
+		&.cm-dreamweaver-javascript-object-constructor {
+			&-getPrototypeOf{color: @objectConstructor}
+			&-setPrototypeOf{color: @objectConstructor}
+			&-getOwnPropertyDescriptor{color: @objectConstructor}
+			&-getOwnPropertyDescriptors{color: @objectConstructor}
+			&-getOwnPropertyNames{color: @objectConstructor}
+			&-getOwnPropertySymbols{color: @objectConstructor}
+			&-assign{color: @objectConstructor}
+			&-create{color: @objectConstructor}
+			&-defineProperty{color: @objectConstructor}
+			&-defineProperties{color: @objectConstructor}
+			&-entries{color: @objectConstructor}
+			&-is{color: @objectConstructor}
+			&-keys{color: @objectConstructor}
+			&-values{color: @objectConstructor}
+			&-seal{color: @objectConstructor}
+			&-isSealed{color: @objectConstructor}
+			&-freeze{color: @objectConstructor}
+			&-isFrozen{color: @objectConstructor}
+			&-preventExtensions{color: @objectConstructor}
+			&-isExtensible{color: @objectConstructor}
+		}
+ 
+		&.cm-dreamweaver-javascript-array-properties {
+			&-toString{color: @arrayProperties}
+			&-toLocaleString{color: @arrayProperties}
+			&-concat{color: @arrayProperties}
+			&-copyWithin{color: @arrayProperties}
+			&-entries{color: @arrayProperties}
+			&-fill{color: @arrayProperties}
+			&-join{color: @arrayProperties}
+			&-find{color: @arrayProperties}
+			&-findIndex{color: @arrayProperties}
+			&-includes{color: @arrayProperties}
+			&-keys{color: @arrayProperties}
+			&-pop{color: @arrayProperties}
+			&-push{color: @arrayProperties}
+			&-reverse{color: @arrayProperties}
+			&-shift{color: @arrayProperties}
+			&-slice{color: @arrayProperties}
+			&-sort{color: @arrayProperties}
+			&-splice{color: @arrayProperties}
+			&-unshift{color: @arrayProperties}
+			&-indexOf{color: @arrayProperties}
+			&-lastIndexOf{color: @arrayProperties}
+			&-every{color: @arrayProperties}
+			&-some{color: @arrayProperties}
+			&-forEach{color: @arrayProperties}
+			&-map{color: @arrayProperties}
+			&-filter{color: @arrayProperties}
+			&-reduce{color: @arrayProperties}
+			&-reduceRight{color: @arrayProperties}
+			&-values{color: @arrayProperties}
+		}
+
+		&.cm-dreamweaver-javascript-string-properties {
+			&-toString{color: @stringProperties}
+			&-valueOf{color: @stringProperties}
+			&-charAt{color: @stringProperties}
+			&-charCodeAt{color: @stringProperties}
+			&-codePointAt{color: @stringProperties}
+			&-concat{color: @stringProperties}
+			&-endsWith{color: @stringProperties}
+			&-includes{color: @stringProperties}
+			&-indexOf{color: @stringProperties}
+			&-lastIndexOf{color: @stringProperties}
+			&-localeCompare{color: @stringProperties}
+			&-match{color: @stringProperties}
+			&-normalize{color: @stringProperties}
+			&-padEnd{color: @stringProperties}
+			&-padStart{color: @stringProperties}
+			&-repeat{color: @stringProperties}
+			&-replace{color: @stringProperties}
+			&-search{color: @stringProperties}
+			&-slice{color: @stringProperties}
+			&-split{color: @stringProperties}
+			&-startsWith{color: @stringProperties}
+			&-substr{color: @stringProperties}
+			&-substring{color: @stringProperties}
+			&-toLowerCase{color: @stringProperties}
+			&-toLocaleLowerCase{color: @stringProperties}
+			&-toUpperCase{color: @stringProperties}
+			&-toLocaleUpperCase{color: @stringProperties}
+			&-trim{color: @stringProperties}
+		}
+				
+        // [END] cm-variables starting with $ different color
+    }
+	.cm-builtin {color: #e28642}
+    .cm-bracket {opacity: .9}
+	.cm-m-clike.cm-string {color: #93DBC9}
+    .cm-attribute{
+        &.cm-dreamweaver-javascript-tag-ID:not(#arienai){
+            color: #B20000;
+            //font-weight: bold;
+        }
+    }
+}
