@@ -214,6 +214,7 @@ define(function(require, exports, module) {
             var html = elm.innerHTML;
 
             html = html.replace(/^(#|\.)/, "");
+            html = html.replace(/['"]+/g, "");
             
             // Dirty method to avoid running when its not necessary.
             if (ignore.indexOf(html) !== -1) {  
